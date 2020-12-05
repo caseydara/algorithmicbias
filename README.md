@@ -1,1 +1,1 @@
-# algorthicbias
+# algorithmicbias
