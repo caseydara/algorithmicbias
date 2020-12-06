@@ -4,118 +4,191 @@
 <head>
     <title>Sources</title>
 </head>
-<h1>We know it's overwhelming to navigate through the news about topics in technology.
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-        
-        html {
-            box-sizing: border-box;
-        }
-        
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-        }
-        
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="design.css">
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+    
+    p {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+    
+    .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+    }
+    
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        margin: 8px;
+    }
+    
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+    }
+    
+    .container {
+        padding: 0 16px;
+    }
+    
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    .title {
+        color: grey;
+    }
+    
+    .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+    
+    .button:hover {
+        background-color: #555;
+    }
+    
+    @media screen and (max-width: 650px) {
         .column {
-            float: left;
-            width: 33.3%;
-            margin-bottom: 16px;
-            padding: 0 8px;
-        }
-        
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            margin: 8px;
-        }
-        
-        .about-section {
-            padding: 50px;
-            text-align: center;
-            background-color: #474e5d;
-            color: white;
-        }
-        
-        .container {
-            padding: 0 16px;
-        }
-        
-        .container::after,
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        
-        .title {
-            color: grey;
-        }
-        
-        .button {
-            border: none;
-            outline: 0;
-            display: inline-block;
-            padding: 8px;
-            color: white;
-            background-color: #000;
-            text-align: center;
-            cursor: pointer;
             width: 100%;
+            display: block;
         }
-        
-        .button:hover {
-            background-color: #555;
-        }
-        
-        @media screen and (max-width: 650px) {
-            .column {
-                width: 100%;
-                display: block;
-            }
-        }
-    </style>
-    </head>
+    }
+    
+    h2 {
+        padding-top: 30px;
+    }
+    
+    img {
+        border-radius: 5px;
+    }
+</style>
+</head>
 
-    <body>
+<body>
 
-        <div class="about-section">
-            <h1>About Us Page</h1>
-            <p>Some text about who we are and what we do.</p>
-            <p>Resize the browser window to see that this page is responsive by the way.</p>
-        </div>
 
-        <h2 style="text-align:center">Our Team</h2>
+
+    <h1 style="text-align:center">AI Researchers & Resources</h1>
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a class="active" href="javascript:void(0)">Resources</a>
+        <a href="takeaction.html">Contact</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="school.html">Take Action</a>
+        <a href="book.html">Book List</a>
+        <a href="map.html">Map</a>
+    </div>
+    <div class="content">
+        <p>We know it's overwhelming to navigate through the news about topics in technology.</p>
         <div class="row">
             <div class="column">
                 <div class="card">
-                    <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+                    <img src="https://hai.stanford.edu/sites/default/files/styles/person_medium/public/2020-03/joy_buolamwini-web_1.jpg?itok=0bT2WIC_" alt="Joy Buolamwini " style="width:100%">
                     <div class="container">
-                        <h2>Jane Doe</h2>
-                        <p class="title">CEO & Founder</p>
-                        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                        <p>jane@example.com</p>
-                        <p><button class="button">Contact</button></p>
+                        <h2>Joy Buolamwini</h2>
+                        <p class="title">MIT A.I. Researcher</p>
+                        <p style="padding-bottom: 275px;"> For years, Joy has been researching Artificial intelligence. Buolamwini studied computer science at Georgia Institute of Technology and has earned a Master's Degree from MIT. Her MIT thesis methodology uncovered large racial and
+                            gender bias in AI services. She has hosted Ted Talks on these topics and has been named one of Forbes Top 50 Women in Tech, MIT Tech Review 35 under 35 2018 Honoree and a Rhodes Scholar. She founded the Algorithmic Justice
+                            League
+                        </p>
+                        <a href="https://www.linkedin.com/in/buolamwini/"><img border="0" alt="Joy LinkedIn" src="https://neilpatel.com/wp-content/uploads/2017/05/LinkedIn.jpg" width="150" height="100"></a>
+                        <a href="https://www.media.mit.edu/people/joyab/overview/"><button class="button">More Information</button></a>
                     </div>
                 </div>
             </div>
+            <div class="column">
+                <div class="card">
+                    <img src="https://mathbabe.files.wordpress.com/2018/01/cathy-oneil-125-full-size.jpg?w=595" alt="Cathy O’Neil" style="width:100%">
+                    <div class="container">
+                        <h2>Cathy O’Neil</h2>
+                        <p class="title">Data Science Researcher and Author</p>
+                        <p style="padding-bottom: 475px;">Cathy O'Neill received her undergraduate degree from the University of Califorinia Berkley and a Ph.D. from Harvard University in mathematics. She work in the mathematics departments of Barnard College and MIT. Most notably, O'Neill
+                            published her book Weapons of Math Destruction about the societal impact of algorithms how some big data algorithms are increasingly used in ways that reinforce preexisting inequality and was awarded the Euler Book Prize.</p>
+                        <a href="https://mathbabe.org/contact/"><button class="button">More Information</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="https://cgest.asu.edu/sites/default/files/styles/panopoly_image_original/public/nicol_turner_lee_header_0.jpg?itok=oETDHZUc" alt="Dr. Nicol Turner Lee" style="width:100%">
+                    <div class="container">
+                        <h2>Dr. Nicol Turner Lee</h2>
+                        <p class="title">The director of the Center for Technology Innovation of TechTank</p>
+                        <p>Dr. Turner Lee is a senior fellow in Governance Studies at TechTank. She received her BA from Colgate University and her PhD from Northwestern University. She has also previously served as vice president and the first director
+                            of the Media and Technology Institute at the Joint Center for Political and Economic Studies. Dr. Turner Lee has been cited in the New York Times, Washington Post, San Francisco Chronicle, Communications Daily, Multichannel
+                            News, and Washington Informer. She can also be seen or heard on NPR, NBC News, ABC and other print and online publications. She is also a widely sought expert and speaker on issues related to communications policies in media
+                            and at conferences, and she has testified on multiple occasions before Congress.</p>
+                        <a href="https://www.linkedin.com/in/nicol-turner-lee-4a285a6"><img border="0" alt="Nicol LinkedIn" src="https://neilpatel.com/wp-content/uploads/2017/05/LinkedIn.jpg" width="150" height="100"></a>
+                        <a href="https://www.brookings.edu/experts/nicol-turner-lee/"><button class="button">More Information</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="https://www.law.georgetown.edu/privacy-technology-center/wp-content/uploads/sites/9/2019/10/IMG_8006.jpg" alt="Clare Garvie" style="width:100%">
+                    <div class="container">
+                        <h2>Clare Garvie</h2>
+                        <p class="title">Senior Associate at Center on Privacy & Technology at Georgetown Law</p>
+                        <p>Clare Garvie graduated from Georgetown Law in 2015. She was lead author on three of the Georgetown Law's Center’s reports on face recognition, including: The Perpetual Line-Up: Unregulated Police Face Recognition in America in
+                            2016; and Garbage In, Garbage Out: Face Recognition on Flawed Data and America Under Watch: Face Surveillance in the United States in 2019. In 2019 she also testified before the House Oversight Committee about police use of
+                            face recognition. Her commentary has appeared in The New York Times, The Washington Post, and The Wall Street Journal.</p>
+                        <a href="https://www.linkedin.com/in/claregarvie"><img border="0" alt="Claire LinkedIn" src="https://neilpatel.com/wp-content/uploads/2017/05/LinkedIn.jpg" width="150" height="100"></a>
+                        <a href="https://www.law.georgetown.edu/privacy-technology-center/people/"><button class="button">More Information</button></a>
+                    </div>
+                </div>
+</body>
+</div>
+</div>
+<a href="https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing">Machine Bias in Policing</a>
+<a href="https://www.aclu.org/other/statement-concern-about-predictive-policing-aclu-and-16-civil-rights-privacy-racial-justice">Statement from the ACLU</a>
+<a href="https://www.pewresearch.org/internet/2017/02/08/code-dependent-pros-and-cons-of-the-algorithm-age/">Pros and Cons of Greater Use of Algorithms</a>
+<h2>Resources</h2>
+<a href="https://www.brookings.edu/topic/technology-innovation/"><img border="0" alt="Brookings Logo" src="https://www.brookings.edu/wp-content/themes/brookings/static/images/brookings-wordmark-fb.gif" width="250" height="200"></a>
+<a href="https://www.technologyreview.com/topic/artificial-intelligence/"><img border="0" alt="MIT Tech Review Logo" src="https://miro.medium.com/max/3150/1*fRTAqrjmS6BLG1L49aq-dg.jpeg" width="250" height="200"></a>
+<a href="https://www.nytimes.com/topic/subject/artificial-intelligence"><img border="0" alt="The New York Times Logo" src="https://static01.nyt.com/vi-assets/images/share/1200x675_nameplate.png" width="250" height="200"></a>
+<a href="https://www.washingtonpost.com/business/technology/?itid=sf_internet-culture_subnav"><img border="0" alt="The Washington Post Logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmFtDe0OiFfjibBhdhpEqaKKQdKN_rURBBAg&usqp=CAU" width="250" height="200"></a>
+<a href="https://www.bbc.com/news/topics/ce1qrvleleqt/artificial-intelligence"><img border="0" alt="The BBC Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_News_2019.svg/1200px-BBC_News_2019.svg.png" width="250" height="200"></a>
+<a href="https://www.pewresearch.org/internet/"><img border="0" alt="Pew Research Center Logo" src="data:image/png;base64,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"
+        width="250" height="200"></a>
+<a href="https://www.npr.org/sections/technology/"><img border="0" alt="NPR Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/National_Public_Radio_logo.svg/1200px-National_Public_Radio_logo.svg.png" width="250" height="200"></a>
+</div>
+</body>
+</div>
+</div>
 
-    </body>
-    </div>
-    </div>
+</body>
+</div>
+</div>
 
-    </body>
-    </div>
-    </div>
-
-    </body>
-    </div>
-    </div>
-
-    </body>
+</body>
 
 </html>

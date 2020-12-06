@@ -12,12 +12,12 @@ var sticky = navbar.offsetTop;
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
-        document.getElementById("pleasework").style.color = "blue"
+            //document.getElementById("pleasework").style.color = "blue"
         document.getElementById("navbar").style.marginLeft = "0%"
         document.getElementById("navbar").style.marginRight = "0%"
     } else {
         navbar.classList.remove("sticky");
-        document.getElementById("pleasework").style.color = "pink"
+        //document.getElementById("pleasework").style.color = "pink"
         document.getElementById("navbar").style.marginLeft = "11%"
         document.getElementById("navbar").style.marginRight = "11%"
     }
